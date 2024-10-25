@@ -11,7 +11,7 @@ pipeline {
                 script {
                     if (isUnix()) {
                         echo 'Running on Unix...'
-                        sh 'apt install make'
+                        sh 'sudo apt install make -y'
                         sh 'make'
                     } else {
                         echo 'Running on Windows...'
