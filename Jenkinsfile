@@ -12,6 +12,9 @@ pipeline {
                     if (isUnix()) {
                         echo 'Running on Unix...'
                         sh 'make'
+                        stage('Permissions'){
+                            echo 'ok'
+                        }
                     } else {
                         echo 'Running on Windows...'
                         bat 'make'
