@@ -22,5 +22,12 @@ pipeline {
                 }
             }
         }
+        stage('Netoyage') {
+            steps {
+                script {
+                    sh 'make clean'
+                }
+            }
+        }
     }
 }
