@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonage du dépôt GitHub') {
             steps {
-                git branch: ‘main’, url : 'https://github.com/corentin-godefroy/StringInverser/'
+                git branch: ‘main’, url : 'https://github.com/corentin-godefroy/StringInverser'
             }
         }
         stage('Build') {
