@@ -13,7 +13,7 @@ pipeline {
                         echo 'Running on Unix...'
                         sh 'make'
                         stage('Permissions'){
-                            echo 'ok'
+                            sh 'chmod +x StringInverser'
                         }
                     } else {
                         echo 'Running on Windows...'
